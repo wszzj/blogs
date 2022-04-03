@@ -67,12 +67,14 @@ items项属性：
 ### CSS动画
 
 浏览器的渲染原理包括：
-1. 根据HTML文件构建HTML树。
-2. 根据CSS文件构建CSS树。
+1. 根据HTML文件构建HTML树（DOM）。
+2. 根据CSS文件构建CSS树（CSSOM）。
 3. 将以上两棵树合成为一棵render渲染树。
 4. 输出layout布局。
 5. 绘制paint样式。
 6. 根据层叠样式关系composite合成页面。
+
+reflow回流和repaint重绘机制会影响CSS的性能，需要代码进行优化，例如：尽量选择DOM 树底层的元素去修改Class；避免设置多个内联样式；如果要使用动画尽量选择Position为Fixed或Absolute的元素；不要选用Table布局等。
    
 CSS动画是描述由多个关键帧画面组成的有开始结束时间的CSS元素，有两种实现方式：
 
