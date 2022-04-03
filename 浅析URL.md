@@ -1,5 +1,6 @@
 # 浅析URL
 URL全名是：Uniform Resource Locator统一资源定位符，俗称网址，用户可以通过这个地址找到自己想要的资源。它的标准格式：
+
     https://www.baidu.com:443/s?wd=hello&rsv_spt=1#5
     协议：//IP（域名）：端口号/资源路径?查询字符串#锚点
 
