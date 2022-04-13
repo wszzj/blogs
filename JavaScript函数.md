@@ -28,11 +28,12 @@
 * 函数提升：JavaScript引擎会把函数名视作变量名，提升到代码头部。
 * arguments（除了箭头函数）：arguments对象包含了函数运行时的所有参数，可以通货修改arguments[x]来修改参数的值，但是在函数对象里面加上'user strict'代码可以强制无法修改参数值。arguments是一个伪数组，可以通过Array.prototype.slice.call(arguments)来转换成数组。
 * this（除了箭头函数）：this就是属性或方法“当前”所在的对象。调用this可以有下面两种方法：
-    
-    arr.fn()
-    arr.fn.call(arr)
-    arr.fn(1)
-    arr.fn.call(arr,1)
+```
+arr.fn()
+arr.fn.call(arr)
+arr.fn(1)
+arr.fn.call(arr,1)
+```
 
 使用.bind可以绑定this。
 
