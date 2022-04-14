@@ -57,15 +57,9 @@ setTimeout方法会在for循环语句执行完之后，再执行打印语句，�
 
 还可以用下面的代码打出0,1,2,3,4,5的结果：
 
-    let i = 0
-    function fn(i) {
-      if (i < 6) {
-        console.log(i)
-        i = i + 1
-        fn(i)
-      }
+    for (i=0;i<6;i++){
+    setTimeout(!function(){console.log(i)}(),0)
     }
-    fn(i)
 
 
 
