@@ -50,7 +50,11 @@ $div.css(propertyName,value)//读取或写入div中css的属性与值
     $('div').find('h3').eq(2).html('Hello')//在div子元素找到h3元素选择第三个将他的内容改成hello
     $('div').find('h3').eq(2).html('Hello').end().eq(0).html("world")//在div子元素找到h3元素选择第三个将他的内容改成hello,再返回h3元素选择第一个将他的内容改成world
 
-这种在选择了元素后，不断进行函数操作，从而链接成链条形式的方法叫链式操作。
+这种在选择了元素后，不断进行函数操作，从而链接成链条形式的方法叫链式风格。
+
+## jQuery原型
+jQuery构造出来的对象有prototype属性，它包含了jQuery的所有共有属性。
+用$.fn = $.prototype修改了名字，将api__proto__指向了$.fn。
 
 
 
